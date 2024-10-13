@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task List</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/design-system/2.17.5/styles/salesforce-lightning-design-system.min.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
+</head>
+<body>
+
+<div class="slds-scope">
+    <div class="slds-card">
+        <div class="slds-card__header slds-grid">
+            <header class="slds-media slds-media_center slds-has-flexi-truncate">
+                <div class="slds-media__figure">
+                    <span class="slds-icon_container custom-icon slds-icon-standard-task" title="Tasks">
+                        <svg class="slds-icon slds-icon_small" aria-hidden="true">
+                            <use xlink:href="/assets/icons/standard-sprite/svg/symbols.svg#task"></use>
+                        </svg>
+                    </span>
+                    <p class="slds-text-body_small">4 records</p>
+                </div>
+                <div class="slds-media__body">
+                    <h2 class="slds-card__header-title">
+                        <a href="javascript:void(0);" class="slds-card__header-link slds-truncate" title="Tasks">
+                            <span>Tasks</span>
+                        </a>
+                    </h2>
+                    <p class="slds-text-body_small" style="margin-bottom: 10px;">All Tasks</p> 
+
+                </div>
+                
+            </header>
+            <div class="slds-no-flex">
+                <button class="slds-button slds-button_neutral">New Task</button>
+                <button class="slds-button slds-button_neutral">Refresh</button>
+                <input type="text" id="text-input-id-1" placeholder="Search"   class="slds-input"  >
+                <!-- <button type="submit" style="position: absolute; border-radius: 50%; cursor: pointer; border: none; margin-right: 200px;" ><i  class="fa-solid fa-magnifying-glass" aria-hidden="true"></i></button> -->
+                
+            </div>
+        </div>
+        <div class="slds-card__body">
+           
+            <table class="slds-table slds-table_cell-buffer slds-table_bordered">
+                <thead>
+                    <tr class="slds-line-height_reset">
+                        <td class="slds-cell-shrink">
+                            <div class="slds-checkbox">
+                                <input type="checkbox" name="options" id="checkbox-1" value="checkbox-1" />
+                                <label class="slds-checkbox__label" for="checkbox-1">
+                                    <span class="slds-checkbox_faux"></span>
+                                    <span class="slds-form-element__label slds-assistive-text">Select item 1</span>
+                                </label>
+                            </div>
+                        </td>
+                        
+                        <th class="" scope="col">
+                            <div class="slds-truncate" title="Assigned To">Assigned To</div>
+                        </th>
+                        <th class="" scope="col">
+                            <div class="slds-truncate" title="Status">Status</div>
+                        </th>
+                        <th class="" scope="col">
+                            <div class="slds-truncate" title="Due Date">Due Date</div>
+                        </th>
+                        <th class="" scope="col">
+                            <div class="slds-truncate" title="Priority">Priority</div>
+                        </th>
+                        <th class="" scope="col">
+                            <div class="slds-truncate" title="Comments">Comments</div>
+                        </th>
+                       
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="slds-hint-parent">
+                        <td class="slds-cell-shrink">
+                            <div class="slds-checkbox">
+                                <input type="checkbox" name="options" id="checkbox-1" value="checkbox-1" />
+                                <label class="slds-checkbox__label" for="checkbox-1">
+                                    <span class="slds-checkbox_faux"></span>
+                                    <span class="slds-form-element__label slds-assistive-text">Select item 1</span>
+                                </label>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="slds-truncate" title="User 1"><a href="javascript:void(0);">User 1</a></div>
+                        </td>
+                        <td>
+                            <div class="slds-truncate" title="Completed">Completed</div>
+                        </td>
+                        <td>
+                            <div class="slds-truncate" title="12/10/2024">12/10/2024</div>
+                        </td>
+                        <td>
+                            <div class="slds-truncate" title="Low">Low</div>
+                        </td>
+                        <td>
+                            <div class="slds-truncate" title="This task is good">This task is good</div>
+                        </td>
+                      
+                    </tr>
+
+                    <tr class="slds-hint-parent">
+                        <td class="slds-cell-shrink">
+                            <div class="slds-checkbox">
+                                <input type="checkbox" name="options" id="checkbox-1" value="checkbox-1" />
+                                <label class="slds-checkbox__label" for="checkbox-1">
+                                    <span class="slds-checkbox_faux"></span>
+                                    <span class="slds-form-element__label slds-assistive-text">Select item 2</span>
+                                </label>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="slds-truncate" title="User 1"><a href="javascript:void(0);">User 2</a></div>
+                        </td>
+                        <td>
+                            <div class="slds-truncate" title="Completed">InProgress</div>
+                        </td>
+                        <td>
+                            <div class="slds-truncate" title="12/10/2024">14/09/2024</div>
+                        </td>
+                        <td>
+                            <div class="slds-truncate" title="Low">High</div>
+                        </td>
+                        <td>
+                            <div class="slds-truncate" title="This task is good">This task is good</div>
+                        </td>
+                          </tr>
+
+                    <tr class="slds-hint-parent">
+                        <td class="slds-cell-shrink">
+                            <div class="slds-checkbox">
+                                <input type="checkbox" name="options" id="checkbox-1" value="checkbox-1" />
+                                <label class="slds-checkbox__label" for="checkbox-1">
+                                    <span class="slds-checkbox_faux"></span>
+                                    <span class="slds-form-element__label slds-assistive-text">Select item 3</span>
+                                </label>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="slds-truncate" title="User 1"><a href="javascript:void(0);">User 3</a></div>
+                        </td>
+                        <td>
+                            <div class="slds-truncate" title="Completed">Not Started</div>
+                        </td>
+                        <td>
+                            <div class="slds-truncate" title="12/10/2024">18/08/2024</div>
+                        </td>
+                        <td>
+                            <div class="slds-truncate" title="Low">Low</div>
+                        </td>
+                        <td>
+                            <div class="slds-truncate" title="This task is good">This task is good</div>
+                        </td>
+                    </tr>
+                    <tr class="slds-hint-parent">
+                        <td class="slds-cell-shrink">
+                            <div class="slds-checkbox">
+                                <input type="checkbox" name="options" id="checkbox-1" value="checkbox-1" />
+                                <label class="slds-checkbox__label" for="checkbox-1">
+                                    <span class="slds-checkbox_faux"></span>
+                                    <span class="slds-form-element__label slds-assistive-text">Select item 4</span>
+                                </label>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="slds-truncate" title="User 1"><a href="javascript:void(0);">User 4</a></div>
+                        </td>
+                        <td>
+                            <div class="slds-truncate" title="Completed">In InProgress</div>
+                        </td>
+                        <td>
+                            <div class="slds-truncate" title="12/10/2024">12/06/2024</div>
+                        </td>
+                        <td>
+                            <div class="slds-truncate" title="Low">Normal</div>
+                        </td>
+                        <td>
+                            <div class="slds-truncate" title="This task is good">This task is good</div>
+                        </td>
+                       </tr>
+                 
+                </tbody>
+            </table>
+        </div>
+        <footer class="slds-card__footer">
+            <div class="slds-grid slds-grid_align-spread">
+                <div class="slds-form-element">
+                    <div class="slds-form-element__control">
+                        <div class="slds-select_container">
+                            <select class="slds-select" id="select-01">
+                                <option value="20">1</option>
+                                <option value="40">2</option>
+                                <option value="60">3</option>
+                                <option value="80">4</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="slds-button-group" role="group">
+                    <button class="slds-button slds-button_neutral">First</button>
+                    <button class="slds-button slds-button_neutral">Prev</button>
+                    <button class="slds-button slds-button_neutral">1</button>
+                    <button class="slds-button slds-button_neutral">Next</button>
+                    <button class="slds-button slds-button_neutral">Last</button>
+                </div>
+            </div>
+        </footer>
+    </div>
+</div>
+
+</body>
+</html>

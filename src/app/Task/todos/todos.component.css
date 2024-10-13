@@ -1,0 +1,20 @@
+.custom-icon {
+    background-color: hsl(334, 62%, 51%);
+}
+
+.slds-card {
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.1);
+}
+
+.slds-table {
+    box-shadow: none;
+}
+
+.slds-text-body_small {
+    margin-top: 4px;
+}
+
+.slds-input {
+    margin-top: 5px;
+}
+
